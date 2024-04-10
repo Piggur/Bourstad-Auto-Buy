@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "BRUHSTAD",
+  "version": "1.0.2",
+  "description": "famoz edj",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bourstad.cirano.qc.ca/*"
+      ],
+      "js": [
+        "src/js/code.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://bourstad.cirano.qc.ca/Transaction*"
+      ],
+      "js": [
+        "src/js/Transaction.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://bourstad.cirano.qc.ca/Pages/EmptyPage*"
+      ],
+      "js": [
+        "src/js/Buy.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://bourstad.cirano.qc.ca/Pages/TransactionConfirmation*"
+      ],
+      "js": [
+        "src/js/Confirmation.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "src/img/icon.png",
+    "32": "src/img/icon.png",
+    "48": "src/img/icon.png",
+    "128": "src/img/icon.png"
+  }
+}

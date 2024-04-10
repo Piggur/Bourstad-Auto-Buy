@@ -1,0 +1,10 @@
+{
+    "scripts": {
+        "sandbox": "webpack",
+        "build": "node build.js"
+    },
+    "dependencies": {
+        "archiver": "^6.0.2",
+        "decompress": "^4.2.1"
+    }
+}
